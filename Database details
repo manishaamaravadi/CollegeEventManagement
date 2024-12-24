@@ -1,0 +1,26 @@
+Open Command Prompt : Type the below command and Press "Enter"
+->mysql -u <yourUsername> -p
+->Press "enter"
+->"Enter your Password" and Press "Enter"
+->Create Database for this project
+  -->CREATE DATABASE CollegeEventDb;
+->USE CollegeEventDb;
+
+->Creating a table to store the details of student joined in club
+
+CREATE TABLE ClubRegistration (
+    Name VARCHAR(100) NOT NULL,
+    RollNumber INT NOT NULL PRIMARY KEY,
+    Branch VARCHAR(50),
+    Section CHAR(1)
+);
+
+->Creating a table to store the details of student who registered a event
+
+  CREATE TABLE Students(
+    Name VARCHAR(100) NOT NULL,
+    RollNumber INT NOT NULL PRIMARY KEY,
+    Branch VARCHAR(50),
+    Section CHAR(1)
+);
+
