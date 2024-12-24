@@ -1,0 +1,132 @@
+<html>
+    <head>
+    <title>COLLEGE EVENT MANAGEMENT</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9f15565ed8.js" crossorigin="anonymous"></script>
+    <style>
+    .header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+ 
+} 
+.left-box {
+  float: left; 
+  width: 40%;
+  border: 1px solid #ccc; 
+  padding: 10px;
+  margin: 10px; 
+  background-color: #f9f9f9;
+  border-radius: 5px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.right-box {
+  float: right;
+  width: 40%;
+  border: 1px solid #ccc; 
+  padding: 10px; 
+  margin: 10px;
+  background-color: #f9f9f9; 
+  border-radius: 5px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+h2 {
+  margin-top: 0; 
+}</style>
+</head>
+<body>
+<div class="header">
+   <img src="img5.jpg">
+  </div>
+  <div class="topnav">
+    <a class="active" href="index.html">Home</a>
+    <a href="st.html">Student Affairs Cell</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="img1.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="img2.jpg" style="width:100%">
+     
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="img3.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)"><</a>
+    <a class="next" onclick="plusSlides(1)">></a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+       <div class="left-box">
+  <marquee direction="right"><h1>TO-DO EVENTS</h1></marquee>
+   
+	<a class="responsive-link" href="register.html">
+		Foss club organises coding conntest event register for the event</a><br><br>
+		<a class="responsive-link" href="register.html">
+		  Raga club originzes singing event register for the event</a><br><br>
+		<a class="responsive-link" href="register.html">
+		 Prathiba club originzes make over friend event register for the event</a><br><br>
+		<a class="responsive-link" href="register.html">
+		Volunteers required for civista club </a><br><br>
+		<a class="responsive-link" href="register.html">
+		 Blood donation camp</a><br><br>
+   
+  </div>
+
+  <div class="right-box">
+    <center><h1>IDEA SHARE</h1></center>
+    <p>We encourage you to share your thoughts of creativity in conducting different types of ideas for organizing the eevents.Share your ideas and be a part of organizing an event.</p>
+	<center><p>Mail us your thoughts
+<p><a href="mailto:deans@vardhaman.org" style="text-decoration: none; color:blue;">
+   deans@vardhaman.org</a>&nbsp;&nbsp;&nbsp;</p></center></center></p>
+  </div>
+       
+        
+          
+</body>
+</html>

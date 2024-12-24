@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>Register Page</title>
+<style>
+body {
+      background-image: url("im4.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .registration-form {
+      width: 550px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid black;
+    }
+
+    .registration-form label {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .registration-form input {
+  width:70%;
+    padding: 10px;
+      border: 1px solid black;
+    }
+
+    .registration-form button {
+      background-color: black;
+      color: red;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+    }
+</style>
+<script>
+function showAlert() {
+  alert("You have registered successfully!");
+  window.location.href = "index.html"; // Redirects to index.html after alert
+}
+</script>
+</head>
+<body>
+<center><h1>REGISTRATION PAGE</h1></center>
+<form name="f1" method="post" action="./s2" onsubmit="showAlert(); return false;">
+<center>
+<div class="registration-form">
+    <h1>Registration Form</h1>
+    <p>Please fill out the following to register an event</p>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="t1" placeholder="Your name" required><br><br>
+    <label for="rollno">Rollno:</label>
+    <input type="text" id="rollno" name="t2" placeholder="Your roll number" required><br><br>
+    <label for="branch">Branch:</label>
+    <select id="branch" name="branch" style="width:70%;padding:10px;" required>
+      <option value="CSE">CSE</option>
+      <option value="CSM">CSM</option>
+      <option value="IT">IT</option>
+      <option value="ECE">ECE</option>
+      <option value="EEE">EEE</option>
+    </select><br><br>
+    <label for="section">Section:</label>
+    <input type="text" name="r1" required><br><br>
+  
+    <input type="submit" value="Submit">
+</div>
+</center>
+</form>
+</body>
+</html>
